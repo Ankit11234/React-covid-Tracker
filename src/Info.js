@@ -6,11 +6,11 @@ function Info({title,cases,isRed,active,total,...props}) {
     return (
         <Card onClick={props.onClick} className={`card ${active && 'active'} ${isRed && 'red'}`}>
             <CardContent>
-                <Typography color="textSecondary">
+                <Typography >
                 {title}
                 </Typography>
                 <h2 className={`case ${!isRed && 'green'}`}>{cases}</h2>
-                <Typography color="textSecondary">
+                <Typography >
                 {total} total
                 </Typography>
             </CardContent>

@@ -103,7 +103,7 @@ function App() {
           <Info
             onClick={(e) => setCasesType("recovered")}
             active={casesType === "recovered"}
-            title="Recoveres" cases={editValue(countryInfo.todayRecovered)}
+            title="Recovered" cases={editValue(countryInfo.todayRecovered)}
             total={editValue(countryInfo.recovered)} />
           <Info
             isRed
